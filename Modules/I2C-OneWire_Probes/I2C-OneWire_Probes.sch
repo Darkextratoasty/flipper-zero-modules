@@ -8639,21 +8639,21 @@ Source: AVX .. aphvc.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PJ-3938PJ" urn="urn:adsk.eagle:component:46584407/2" library_version="2">
+<deviceset name="PJ-3938PJ" urn="urn:adsk.eagle:component:46584407/3" library_version="3">
 <gates>
 <gate name="G$1" symbol="PJ-3938PJ" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="PJ-3938PJ">
 <connects>
-<connect gate="G$1" pin="1A" pad="P$1"/>
-<connect gate="G$1" pin="1B" pad="P$8"/>
-<connect gate="G$1" pin="2A" pad="P$2"/>
-<connect gate="G$1" pin="2B" pad="P$7"/>
-<connect gate="G$1" pin="3A" pad="P$3"/>
-<connect gate="G$1" pin="3B" pad="P$6"/>
-<connect gate="G$1" pin="4A" pad="P$5"/>
-<connect gate="G$1" pin="4B" pad="P$4"/>
+<connect gate="G$1" pin="1A" pad="P$4"/>
+<connect gate="G$1" pin="1B" pad="P$5"/>
+<connect gate="G$1" pin="2A" pad="P$3"/>
+<connect gate="G$1" pin="2B" pad="P$6"/>
+<connect gate="G$1" pin="3A" pad="P$2"/>
+<connect gate="G$1" pin="3B" pad="P$7"/>
+<connect gate="G$1" pin="4A" pad="P$1"/>
+<connect gate="G$1" pin="4B" pad="P$8"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:46584406/2"/>
@@ -8939,7 +8939,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AMS1117-3.3" urn="urn:adsk.eagle:component:46106858/2" prefix="U" library_version="2">
+<deviceset name="AMS1117-3.3" urn="urn:adsk.eagle:component:46106858/3" prefix="U" library_version="3">
 <description> &lt;a href="https://pricing.snapeda.com/parts/AMS1117-3.3/Advanced%20Monolithic%20Systems/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="AMS1117-3.3" x="0" y="0"/>
@@ -8949,7 +8949,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <connects>
 <connect gate="G$1" pin="GND/ADJ" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="2"/>
+<connect gate="G$1" pin="VOUT" pad="2 4"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:46106857/2"/>
@@ -8958,7 +8958,9 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <technology name="">
 <attribute name="AVAILABILITY" value="Not in stock"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/AMS1117-3.3/Advanced+Monolithic+Systems/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value=" Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator "/>
+<attribute name="DESCRIPTION" value="
+Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator
+"/>
 <attribute name="MF" value="Advanced Monolithic Systems"/>
 <attribute name="MP" value="AMS1117-3.3"/>
 <attribute name="PACKAGE" value="SOT-223 Seeed Technology"/>
@@ -9553,43 +9555,20 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="3A"/>
-<wire x1="180.34" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
-<label x="170.18" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J1" gate="J1" pin="4"/>
 <wire x1="101.6" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 <label x="101.6" y="66.04" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="3A"/>
-<wire x1="180.34" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
-<label x="170.18" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="3A"/>
-<wire x1="180.34" y1="-7.62" x2="170.18" y2="-7.62" width="0.1524" layer="91"/>
-<label x="170.18" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$2" pin="PC0/SCL"/>
 <wire x1="111.76" y1="-10.16" x2="121.92" y2="-10.16" width="0.1524" layer="91"/>
 <label x="116.84" y="-10.16" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SDA" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="2A"/>
 <wire x1="180.34" y1="86.36" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
 <label x="170.18" y="86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J1" gate="J1" pin="3"/>
-<wire x1="106.68" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
-<label x="101.6" y="63.5" size="1.778" layer="95"/>
-<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="2A"/>
@@ -9601,10 +9580,33 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="180.34" y1="-15.24" x2="170.18" y2="-15.24" width="0.1524" layer="91"/>
 <label x="170.18" y="-15.24" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="3"/>
+<wire x1="106.68" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
+<label x="101.6" y="63.5" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+</segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="PC1/SDA"/>
 <wire x1="111.76" y1="-7.62" x2="121.92" y2="-7.62" width="0.1524" layer="91"/>
 <label x="116.84" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3A"/>
+<wire x1="180.34" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<label x="170.18" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="3A"/>
+<wire x1="180.34" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<label x="170.18" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3A"/>
+<wire x1="180.34" y1="-7.62" x2="170.18" y2="-7.62" width="0.1524" layer="91"/>
+<label x="170.18" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
